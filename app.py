@@ -12,7 +12,7 @@ def home():
 @app.route('/predict', methods=['POST', 'GET'])
 def result():
     Education = float(request.form['Education'])
-    no_of_trainings = float(request.form['no_of{trainings'])
+    no_of_trainings = float(request.form['no_of_trainings'])
     age = float(request.form['age'])
     previous_year_rating = float(request.form['previous_year_rating'])
     length_of_service = float(request.form['length_of_service'])
