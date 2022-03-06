@@ -59,33 +59,33 @@ if nav == 'Prediction':
         if st.button('Predict'):
             S = DTC.predict(x)
             if S == 0:
-                st.header("Based on features gender is Female")
+                st.header("Based on features Employee is Not Promoted")
             else:
-                st.header("Based on features gender is male")
+                st.header("Based on prediction employee is Promoted")
 
     if CLS == "LogisticsRegression":
         if st.button('Predict'):
             S = LogReg.predict(x)
             if S == 0:
-                st.header("Based on features gender is Female")
+                st.header("Based on features Employee is Not Promoted")
             else:
-                st.header("Based on features gender is male")
+                st.header("Based on prediction employee is Promoted")
 
     if CLS == "ALL":
         if st.button('Predict'):
             st.header("LogisticRegression")
             S = LogReg.predict(x)
             if S == 0:
-                st.header("Based on features gender is Female")
+                st.header("Based on features Employee is Not Promoted")
             else:
-                st.header("Based on features gender is male")
+                st.header("Based on prediction employee is Promoted")
 
             st.header("DecisionTreeClassifier")
             C = DTC.predict(x)
             if C == 0:
-                st.header("Based on features gender is Female")
+                st.header("Based on features Employee is Not Promoted")
             else:
-                st.header("Based on features gender is male")
+                st.header("Based on prediction employee is Promoted")
 
 if nav == 'Insights':
     st.title('Insights from the dataset')
